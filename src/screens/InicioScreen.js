@@ -1,20 +1,23 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-export default function InicioScreen({ navigation }) {
+export default function InicioScreen() {
     return (
-        <View style={{ padding: 20 }}>
-            <Text style={{ fontSize: 24 }}>Bem-vindo 🎬</Text>
-
-            <Button
-                title="Ir para Filmes"
-                onPress={() => navigation.navigate('Tabs', { screen: 'Filmes' })}
-            />
-
-            <Button
-                title="Ir para Séries"
-                onPress={() => navigation.navigate('Tabs', { screen: 'Séries' })}
-            />
+        <View style={styles.container}>
+            <Text style={styles.text}>Bem-vindo ao Guia de Filmes e Séries!</Text>
+            <Text style={styles.sub}>Abra o menu ou use as abas para navegar.</Text>
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#121212',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 20,
+    },
+    text: { color: '#FFF', fontSize: 20, fontWeight: 'bold', textAlign: 'center' },
+    sub: { color: '#A0A0A0', marginTop: 10 },
+});
