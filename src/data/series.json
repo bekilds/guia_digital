@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "nome": "Stranger Things",
+        "descricao": "Mistérios sobrenaturais",
+        "imagem": "https://via.placeholder.com/300",
+        "categoria": "Ficção"
+    }
+]

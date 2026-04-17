@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "nome": "Vingadores",
+        "descricao": "Heróis salvando o mundo",
+        "imagem": "https://via.placeholder.com/300",
+        "categoria": "Ação"
+    }
+]
